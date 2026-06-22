@@ -1,17 +1,17 @@
 name: 'Mera Pehla Pipeline'
 
-on:
-  push:
-    branches:
+on: # when
+  push:  #pushing
+    branches:  #main brance
       - main
 
-jobs:
-  hello-job:
-    runs-on: ubuntu-latest
+jobs:  #its job (what it will do)
+  hello-job: #name of the job ,could be anything
+    runs-on: ubuntu-latest #which machine it will work
 
-    steps:
+    steps: 
     - name: Hello bolna
-      run: echo "Hello! Main GitHub Actions robot hun!"
+      run: echo "Hello! Main GitHub Actions robot hun!"  # name Hello bolna will print the run 
 
     - name: Aur kuch bolna
       run: echo "Arick ne mujhe banaya hai!"
