@@ -1,0 +1,20 @@
+name: 'Mera Pehla Pipeline'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Hello bolna
+      run: echo "Hello! Main GitHub Actions robot hun!"
+
+    - name: Aur kuch bolna
+      run: echo "Arick ne mujhe banaya hai!"
+
+    - name: Date batana
+      run: date
